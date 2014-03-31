@@ -9,20 +9,21 @@
 	</head>
 	<body>
     <div class="container">
-      <div class="page-header">
-        
+        <div class="page-header">
+          
+      
+
+
+        <ul class="nav nav-pills pull-right">
+   
+         <li> <%= link_to "Home", root_url %> </li>
+     <li> <%= link_to "About", about_url %> </li>
+     <li> <%= link_to "Manage Posts", posts_url %> </li>
     
-
-
-      <ul class="nav nav-pills pull-right">
- 
-       <li> <%= link_to "Home", "/" %> </li>
-   <li> <%= link_to "About", "/about" %> </li>
-  
-</ul>
-<h1> <%= link_to "The Sandy Project", "/" %> <small>a NJ.com special blog</small>
-          </h1>
-      </div>
+  </ul>
+  <h1> <%= link_to "The Sandy Project", "/" %> <small>a NJ.com special blog</small>
+            </h1>
+        </div>
       <div class="row">
 <div class="col-md-6 col-md-offset-3">
 	<%= yield %>

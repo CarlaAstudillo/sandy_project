@@ -1,3 +1,6 @@
-<h1>Welcome</h1>
-<p>This is the landing page for the Sandy project, a blog keeping track of Hurricane Sandy recovery efforts. </p>
-<p>This page is just a placeholder. Later on, we'll replace it with posts in our blogs. </p>
+<% @posts.each do |post| %>
+<%= render 'posts/post', post:post %>
+
+<br><br><br><br>
+
+<% end %>
