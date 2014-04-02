@@ -12,18 +12,8 @@
  *= require_tree .
  */
 
-body { padding-top: 70px;
-min-height: 2000px; }
+body { padding-top: 70px; }
 .navbar-fixed-top {background-color: #666;}
-
-a.navbar-brand {
-	font-size: 37px;
-}
-
-.navbar {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
 
   .thumbnail.with-caption {
     display: inline-block;
@@ -37,18 +27,4 @@ a.navbar-brand {
     text-align: right;
     display: inline-block;
   }
-
-  .video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
   
