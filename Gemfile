@@ -15,6 +15,11 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+# Use Social-buttons for social media shareable buttons
+
+gem "social-buttons", git: "git://github.com/kristianmandrup/social-buttons.git"
+
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
