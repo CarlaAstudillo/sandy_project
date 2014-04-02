@@ -5,4 +5,13 @@ class PagesController < ApplicationController
   def welcome
   	@posts = Post.all
   end
+
+  def scorecard
+  end
+
+  def explainer
+  end
+
 end
+
+
