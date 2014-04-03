@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def welcome
   	@posts = Post.all
+  	@posts = Post.paginate(:page => params[:page], :per_page => 10)
   end
 
   def scorecard

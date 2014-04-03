@@ -4,20 +4,20 @@
 
 <p>
 
-<% if post.kind == "Video" %>
+<% if !post.image.blank? and post.kind == "Video" %>
 	<div class="video-responsive">
  <iframe width="100%" height="100%" frameborder="0" allowfullscreen src="<%= post.image %>"></iframe>
 </div>
 
+<p style="margin: 0;font-size: 12px;padding-top: 0.5em;width: 100%;font-weight: bold;text-align: right;display: inline-block;"><%= simple_format post.caption %></p>
+  
 
-  <small><%= simple_format post.caption %></small>
 
-
-<% else %>
+<% elsif !post.image.blank? and post.kind == "Image" %>
 	<div class="thumbnail with-caption">
   <%= image_tag post.image, style: "width:100%" %>
-
-  <small><%= simple_format post.caption %></small>
+<small><%= simple_format post.caption %></small>
+ 
 
 </div>
 <% end %>
