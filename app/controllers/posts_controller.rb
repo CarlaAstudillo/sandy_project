@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   def show
   end
 
+
   # GET /posts/new
   def new
     @post = Post.new
@@ -71,6 +72,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :image, :caption, :quote, :content )
+      params.require(:post).permit(:title, :image, :kind, :caption, :quote, :content)
     end
 end
