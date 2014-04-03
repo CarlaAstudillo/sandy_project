@@ -1,4 +1,5 @@
 Sandy::Application.routes.draw do
+  devise_for :users
   resources :posts
 
   get "about" => "pages#about"
