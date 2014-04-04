@@ -5,7 +5,6 @@ class CreatePosts < ActiveRecord::Migration
       t.text :caption
       t.text :quote
       t.text :content
-      t.text :image
 
 
       t.timestamps
