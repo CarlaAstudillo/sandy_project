@@ -1,13 +1,19 @@
-<h1> Forgotten Faces of Sandy </h1>
+
+
+
+  
+  
 
 <% @posts.each do |post| %>
 <%= render 'posts/post', post:post %>
 
 
 
-<br><br><br><br>
 
 <% end %>
 
+
   <%= will_paginate @posts %>
+
+
 

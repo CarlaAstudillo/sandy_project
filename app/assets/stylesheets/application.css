@@ -13,30 +13,71 @@
  */
 
 body { padding-top: 70px;
-min-height: 2000px; }
+min-height: 2000px; 
+  background-image: radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
+  background-image: -o-radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
+  background-image: -ms-radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
+  background-image: -moz-radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
+  background-image: -webkit-radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
+}
+
 .navbar-fixed-top {background-color: #666;}
 
 a.navbar-brand {
-	font-size: 37px;
+  font-size: 37px;
 }
 
 .navbar {
-	padding-top: 20px;
-	padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-  .thumbnail.with-caption {
-    display: inline-block;
-    background: #f5f5f5;
-  }
-  .thumbnail.with-caption p {
-    margin: 0;
-    padding-top: 0.5em;
-    width: 100%;
-    font-weight: bold;
-    text-align: right;
-    display: inline-block;
-  }
+
+
+#content {
+  height:100%;
+  margin: 0 auto !important;
+font-size: 1.2em;
+}
+
+#content h2{font: 700 35px/0.5 'Oswald', Helvetica, sans-serif;
+margin-top: 20px;
+text-transform: uppercase;
+margin-bottom: 10px;
+
+line-height: 1.1;}
+
+ #content a {
+  color: #919191;
+ }
+
+ 
+
+#content .item { width: 32% !important;
+   padding: 9px;
+line-height: 1.42857143;
+background: #fafafa;
+font: 400 15px/0.5 'News Cycle', Helvetica, sans-serif;
+line-height: 1.4;
+height: auto;
+margin: 3px;
+float:left;
+    box-shadow:0 0 7px #bbb;
+
+  
+ }
+
+ #content .item:hover { opacity: 0.8;
+  
+
+  
+ }
+
+
+
+
+
+
 
   .video-responsive{
     overflow:hidden;
@@ -55,4 +96,15 @@ a.navbar-brand {
 
 .video-responsive p{
 }
+
+nav.share {display:inline-block;} /* shareable's nav tag */
+nav.share div {float:left; overflow:hidden;}
+nav.share iframe {max-height:20px; border:0; margin-top:0; padding-top:0;} /* if using medium sized buttons */
+#___plusone_0 {max-width:70px; font-size: default; !important}
+.twitter-share-button, .twitter-count-horizontal {max-width:80px;}
+.fb_iframe_widget span { vertical-align: top; }
+.fb_edge_widget_with_comment { vertical-align: top;}
+.fb-like{display:inline-block}
+* html .fb-like{display:inline}/* ie6 inline block fix*/
+*+html .fb-like{display:inline}/* ie7 inline block fix*/
   

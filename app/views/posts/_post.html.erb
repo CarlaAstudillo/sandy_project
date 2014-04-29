@@ -1,6 +1,7 @@
-<p>
+<div class="item">
+	<span class="pull-right"><%= simple_format post.caption %></span>
   <h2><%= link_to post.title, post %></h2>
-</p>
+
 
 <p>
 
@@ -14,12 +15,11 @@
 
 
 <% elsif !post.image.blank? and post.kind == "Image" %>
-	<div class="thumbnail with-caption">
-  <%= image_tag post.image, style: "width:100%" %>
-<small><%= simple_format post.caption %></small>
+	
+  <%= image_tag post.image, style: "width:100%"%>
  
 
-</div>
+
 <% end %>
 
 
@@ -38,4 +38,6 @@
 </p>
 
 
-<%= tweet_button(via: "njdotcom", url: post, text: post.title) %>
+<%= render_shareable :buttons=> ['twitter'], :via=> 'njdotcom', :text=> post.title + ' #sandyproject' %>
+
+</div>
