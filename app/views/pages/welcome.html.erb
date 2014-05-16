@@ -1,12 +1,17 @@
 
+<!DOCTYPE html>
+<html>
+	<head>
 
+  <script src="http://isotope.metafizzy.co/isotope.pkgd.min.js"></script>
 
-  
-  
+  </head>
 
 <% @posts.each do |post| %>
-<%= render 'posts/post', post:post %>
 
+<div class="item">
+<%= render 'posts/post', post:post %>
+</div>
 
 
 
@@ -15,5 +20,25 @@
 
   <%= will_paginate @posts %>
 
+<script>
+// init
+
+
+
+
+     $(window).load(function(){
+     	var $container = $('#content');
+$container.isotope({
+
+
+  itemSelector: '.item'
+ 
+});
+});
+
+</script>
+</body>
+  
+	</html>
 
 

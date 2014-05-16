@@ -1,5 +1,5 @@
-<div class="item">
-	<span class="pull-right"><%= simple_format post.caption %></span>
+
+<span class="pull-right"><%= simple_format post.caption %></span>
   <h2><%= link_to post.title, post %></h2>
 
 
@@ -25,19 +25,10 @@
 
 <% if !post.quote.blank? -%>
 <blockquote>
-  <p><%= simple_format post.quote %></p>
+  <%= link_to post.quote, post %>
   
 </blockquote>
 <% end %>
 
-  <%= simple_format post.content %>
+  
 
-</p>
-<p class="text-muted"> 
-<small>Posted on <%= post.created_at.to_formatted_s(:long_ordinal) %></small>
-</p>
-
-
-<%= render_shareable :buttons=> ['twitter'], :via=> 'njdotcom', :text=> post.title + ' #sandyproject' %>
-
-</div>

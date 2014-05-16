@@ -1,0 +1,9 @@
+<%= simple_format post.content %>
+
+</p>
+<p class="text-muted"> 
+<small>Posted on <%= post.created_at.to_formatted_s(:long_ordinal) %></small>
+</p>
+
+
+<%= render_shareable :buttons=> ['twitter'], :via=> 'njdotcom', :text=> post.title + ' #sandyproject' %>

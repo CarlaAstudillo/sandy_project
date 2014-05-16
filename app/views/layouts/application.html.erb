@@ -5,7 +5,7 @@
 	  
 	 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <script src="http://isotope.metafizzy.co/isotope.pkgd.min.js"></script>
+    
    
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700|Oswald' rel='stylesheet' type='text/css'>
@@ -66,35 +66,22 @@
 <a name="anchor"></a>
     
       
-<div class="col-md-12">
+
   <div id="content">
    
   
     
 	<%= yield %>
-  </div>
-  
-  <%= link_to "Back to Top", @post, anchor: "anchor", style: "float:right" %>
-
-
-
 </div>
 
-<script>
-// init
-
-var $container = $('#content');
-     $(window).load(function(){
-$container.isotope({
+  <%= link_to "Back to Top", @post, anchor: "anchor", style: "float:right" %>
+  
 
 
-  itemSelector: '.item',
-  layoutMode: 'masonry'
- 
-});
-});
 
-</script>
+
+
+
 	</body>
   
 	</html>

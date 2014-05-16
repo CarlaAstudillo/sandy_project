@@ -1,8 +1,12 @@
-<% if notice.present? %>
+<div class="col-md-8 col-md-offset-2"><% if notice.present? %>
 
 <p class="alert alert-info"><%= notice %></p>
 
 <% end %>
-
+<div class="fullpost">
 <%= render 'post', post: @post %> 
+<%= render 'moreinfo', post: @post %>
+</div>
+
+</div>
 
