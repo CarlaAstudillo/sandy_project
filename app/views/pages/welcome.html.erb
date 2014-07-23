@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js"></script>
+
   <script src="http://isotope.metafizzy.co/isotope.pkgd.min.js"></script>
 
   </head>
@@ -22,46 +22,7 @@
 
 
 </body>
- <script>
-// init
 
-
-$(window).load(function(){
-	var $container = $('#content');
-
-  $container.isotope({
-     itemSelector: '.item',
-    layoutMode: 'masonry'
- 
-});
-                 });
-	
-
-
-     $(window).load(function(){
-      
-console.log("This fired!")
-$('#content').isotope({
-    itemSelector: '.item',
-    layoutMode: 'masonry'
-  });
-
-
-
-$(window).resize(function() {
-  var windowwidth= $(window).width();   // returns width of browser viewport
-var docwidth = $(document).width();
-
-console.log("This is width:" + docwidth)
-if (windowwidth == 841) {
-	
-}
-})
-
-
-     });
-
-</script>
   
 	</html>
 
