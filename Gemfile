@@ -5,11 +5,12 @@ gem 'rails', '4.0.4'
 
 # Use sqlite3 as the database for Active Record in developments
 group :development do
-gem 'sqlite3'
+	gem 'sqlite3'
 end
 # Use posgres as the database for Active Record in heroku
 group :production do 
 	gem 'pg'
+	gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
