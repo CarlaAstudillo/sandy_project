@@ -8,7 +8,7 @@ Sandy::Application.routes.draw do
 
   get "scorecard" => "pages#scorecard"
 
-  get "explainer" => "pages#explainer"
+  get "nominate" => "pages#nominate"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
