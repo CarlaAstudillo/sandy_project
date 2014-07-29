@@ -12,7 +12,7 @@
  *= require_tree .
  */
 
-body { padding-top: 0px;
+body { margin-top: 90px;
 min-height: 2000px; 
   background-image: radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
   background-image: -o-radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
@@ -128,7 +128,7 @@ height: auto;
  }
 
  a.navbar-brand {
-  font-size: 25px;
+  font-size: 29px;
 }
           }
 
