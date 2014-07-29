@@ -106,14 +106,14 @@ height: auto;
 
 
 /* responsive table */
-        @media screen and (max-width: 841px) {
+        @media all and (max-width: 841px) {
             .item { width: 49% !important;
    
   
  }
           }
 
- @media screen and (max-width: 603px) {
+ @media all and (max-width: 603px) {
             .item { width: 99% !important;
    
   
