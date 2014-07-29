@@ -4,7 +4,7 @@
 
 
 
-body { padding-top: 90px;
+body { padding-top: 0px;
 min-height: 2000px; 
   background-image: radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
   background-image: -o-radial-gradient(center bottom, ellipse cover, #ffffff, #e9e9e9);
@@ -24,6 +24,11 @@ a.navbar-brand {
   padding-top: 20px;
   padding-bottom: 20px;
 
+}
+
+.navbar-default .navbar-collapse {
+  border:none;
+  box-shadow:none;
 }
 
 
@@ -47,36 +52,26 @@ line-height: 1.1;}
 
  
 
-.item { width: 32% !important;
+.item { width: 33% !important;
    padding: 9px;
 line-height: 1.42857143;
 background: #fafafa;
 font: 400 15px/0.5 'News Cycle', Helvetica, sans-serif;
 line-height: 1.4;
 height: auto;
-margin: 1px;
+margin: 2px;
 float:left;
     box-shadow:0 0 7px #bbb;
 
   
  }
 
- /* responsive table */
-        @media screen and (max-width: 841px) {
-            .item { width: 49% !important;
-   
-  
- }
-          }
-
-          @media screen and (max-width: 603px) {
-            body {padding-top: 140px;}
-            .item { width: 99% !important;
-            
-   
-  
- }
-          }
+ /* clear fix */
+#content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
  #content .fullpost { 
    padding: 20px;
@@ -107,9 +102,27 @@ height: auto;
  }
 
 
+/* responsive table */
+        @media all and (max-width: 841px) {
+            .item { width: 49% !important;
+   
+  
+ }
+ a.navbar-brand {
+  font-size: 33px;
+}
+          }
 
+ @media all and (max-width: 603px) {
+            .item { width: 99% !important;
+   
+  
+ }
 
-
+ a.navbar-brand {
+  font-size: 25px;
+}
+          }
 
 
   .video-responsive{
@@ -133,7 +146,7 @@ height: auto;
 nav.share {display:inline-block;} /* shareable's nav tag */
 nav.share div {float:left; overflow:hidden;}
 nav.share iframe {max-height:20px; border:0; margin-top:0; padding-top:0;} /* if using medium sized buttons */
-#___plusone_0 {max-width:70px; font-size: default;}
+#___plusone_0 {max-width:70px; font-size: default; }
 .twitter-share-button, .twitter-count-horizontal {max-width:80px;}
 .fb_iframe_widget span { vertical-align: top; }
 .fb_edge_widget_with_comment { vertical-align: top;}
@@ -141,4 +154,3 @@ nav.share iframe {max-height:20px; border:0; margin-top:0; padding-top:0;} /* if
 * html .fb-like{display:inline}/* ie6 inline block fix*/
 *+html .fb-like{display:inline}/* ie7 inline block fix*/
   
-

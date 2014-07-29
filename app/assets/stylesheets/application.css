@@ -34,6 +34,11 @@ a.navbar-brand {
 
 }
 
+.navbar-default .navbar-collapse {
+  border:none;
+  box-shadow:none;
+}
+
 
 
 #content {
@@ -111,6 +116,9 @@ height: auto;
    
   
  }
+ a.navbar-brand {
+  font-size: 33px;
+}
           }
 
  @media all and (max-width: 603px) {
@@ -118,6 +126,10 @@ height: auto;
    
   
  }
+
+ a.navbar-brand {
+  font-size: 25px;
+}
           }
 
 
