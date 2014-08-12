@@ -34,6 +34,7 @@ min-height: 600px;
 a.navbar-brand {
   font: 700 35px/0.5 'Prelo-SemiBold', Helvetica, sans-serif;
   color: #ADADAD !important;
+  text-transform:uppercase;
 }
 
 .navbar-default a:hover {
