@@ -17,6 +17,7 @@ end
 # To track performance issues
 gem 'newrelic_rpm'
 
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
