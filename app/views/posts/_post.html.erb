@@ -15,8 +15,10 @@
 
 
 <% elsif !post.image.blank? and post.kind == "Image" %>
-	
+	<%= link_to post do %>
   <%= image_tag post.image, style: "width:100%"%>
+<% end %>
+
  
 
 
